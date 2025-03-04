@@ -1,22 +1,19 @@
 # C# Blockchain API
 
 A simple blockchain implementation in C# using ASP.NET Core Web API.
------------------------
------------------------
+
 ## Features
 
 - Block creation and mining with proof-of-work
 - Chain validation
 - RESTful API endpoints
 - Swagger UI for API documentation and testing
------------------------
------------------------
+
 ## Prerequisites
 
 - .NET 8.0 SDK
 - Visual Studio 2022 or VS Code
------------------------
------------------------
+
 ## Getting Started
 
 1. Clone the repository
@@ -27,28 +24,27 @@ A simple blockchain implementation in C# using ASP.NET Core Web API.
 
 ## API Endpoints
 
-    ### GET /api/blockchain/blocks
-        Returns the entire blockchain.
+## GET /api/blockchain/blocks
+   Returns the entire blockchain.
 
-    ### POST /api/blockchain/mine
-        Mines a new block with the provided data.
+## POST /api/blockchain/mine
+   Mines a new block with the provided data.
 
-        Request body: JSON string with the block data
+   Request body: JSON string with the block data
 
-        Example:
-        json: { "Transaction data here" }
+   Example:
+      json: { "Transaction data here" }
 
-    ### GET /api/blockchain/validate
-    ^Validates the integrity of the blockchain.
+## GET /api/blockchain/validate
+^Validates the integrity of the blockchain.
 
-    ## Implementation Details
+## Implementation Details
 
-    - Each block contains: Index, Timestamp, Previous Hash, Hash, Data, and Nonce
-    - Proof-of-work difficulty is set to 2 (can be adjusted in the Blockchain class)
-    - SHA256 hashing is used for block hashes
-    - Chain validation checks both block hashes and chain integrity 
------------------------
------------------------
+   - Each block contains: Index, Timestamp, Previous Hash, Hash, Data, and Nonce
+   - Proof-of-work difficulty is set to 2 (can be adjusted in the Blockchain class)
+   - SHA256 hashing is used for block hashes
+   - Chain validation checks both block hashes and chain integrity 
+
 ## Running the C# Blockchain API
 
 ## Prerequisites
