@@ -50,7 +50,6 @@ A simple blockchain implementation in C# using ASP.NET Core Web API.
 ## Prerequisites
 1. Install .NET 8.0 SDK 
 2. Any code editor (Visual Studio Code recommended)
------------------------
 ## Steps to Run
 
 1. Open a terminal/command prompt and navigate to the BlockchainApi directory:
@@ -65,8 +64,7 @@ dotnet run
 4. The API will start running and will be available at:
    - HTTP: http://localhost:5219
    - Swagger UI: http://localhost:5219/swagger
------------------------
------------------------
+     
 ## Testing the API
 
 You can test the API using either UI or any HTTP client (like Postman):
